@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game{
+    width: 1000px;
+    height: 400px;
+    border: 2px solid black;
+}
+
+#character{
+    width: 40px;
+    height: 100px;
+    content: url("https://i.ibb.co/VJDfnxN/monkey-w-banana.png");
+    position: relative;
+    top: 300px;
+    left: 30px;
+}
+
+#block{
+    width: 40px;
+    height: 40px;
+    content: url("https://i.ibb.co/82WT957/banana.png");
+    position: relative;
+    top: 260px;
+    left: 960px;
+    animation: block 1.3s infinite normal;
+}
+
+@keyframes block{
+    from {left: 960px;}
+    to {left:-40px;}
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+}
+
+.animate{
+    animation: jump 500ms;
+}
