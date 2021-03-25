@@ -42,3 +42,10 @@
 .animate{
     animation: jump 500ms;
 }
+
+#score{
+    font-size: 2rem;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
