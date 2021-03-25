@@ -25,10 +25,10 @@
     position: relative;
     top: 260px;
     left: 960px;
-    animation: block 1.3s infinite normal;
+    animation: slide 1.3s infinite normal;
 }
 
-@keyframes block{
+@keyframes slide{
     from {left: 960px;}
     to {left:-40px;}
 }
@@ -48,4 +48,22 @@
     position: absolute;
     left: 30px;
     top: 30px;
+}
+
+#game-over{
+    font-size: 2rem;
+    position: absolute;
+    left: 310px;
+    top: 100px;
+}
+
+#start{
+    background-color: chartreuse;
+    font-size: 1rem;
+    height: 2rem;
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    padding: 6px;
+    display: none; 
 }
